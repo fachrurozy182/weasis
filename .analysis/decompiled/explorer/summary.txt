@@ -1,0 +1,18 @@
+Summary for /Users/fahrurozyahmad/Data/APPS/weasis/.analysis/jars/all/weasis-dicom-explorer-4.7.3.jar
+Decompiled with CFR 0.152
+
+
+org.weasis.dicom.explorer.main.DicomExplorer
+----------------------------
+
+syncFilterToState(org.weasis.core.api.media.data.MediaSeriesGroup )
+  Unable to fully structure code
+
+
+org.weasis.dicom.explorer.wado.SeriesDownloadManager
+----------------------------
+
+startBulkSeriesDownload(org.weasis.dicom.mf.WadoParameters )
+  Loose catch block
+process()
+  Unable to fully structure code

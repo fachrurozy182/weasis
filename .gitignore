@@ -1,24 +1,24 @@
 # ==== SECRETS & RUNTIME STATE: JANGAN PERNAH DI-COMMIT ====
-.env
-.env.*
-secrets/
-*.pem
-*.key
-*.p12
-*.jks
-*.keystore
-*.lock
+# .env
+# .env.*
+# secrets/
+# *.pem
+# *.key
+# *.p12
+# *.jks
+# *.keystore
+# *.lock
 
 # ==== State tool lokal (spesifik mesin, bukan bagian project) ====
-.claude/
-.serena/
+# .claude/
+# .serena/
 
 # ==== Artefak pihak ketiga ====
 # opt/ adalah hasil ekstrak paket .deb Weasis resmi (~230 MB, termasuk JRE bawaan).
 # Tidak di-commit karena isinya binary pihak ketiga yang bisa diunduh ulang dari rilis resmi,
 # dan file runtime/lib/modules (~92 MB) mendekati batas 100 MB GitHub.
-opt/
+# opt/
 # Jar dan hasil dekompilasi Weasis/dcm4che adalah kode pihak ketiga yang lisensinya
 # (EPL/Apache, MPL/GPL/LGPL) tidak boleh dipublikasikan ulang tanpa header lisensi aslinya.
 # Repo ini publik, jadi hasil analisis tetap disimpan lokal saja.
-.analysis/
+# .analysis/

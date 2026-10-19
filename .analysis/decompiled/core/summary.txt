@@ -1,0 +1,18 @@
+Summary for /Users/fahrurozyahmad/Data/APPS/weasis/.analysis/jars/all/weasis-core-4.7.3.jar
+Decompiled with CFR 0.152
+
+
+org.weasis.core.ui.model.graphic.AbstractGraphic
+----------------------------
+
+lambda$setLabel$0(java.lang.String[] org.weasis.core.ui.editor.image.ViewCanvas java.awt.Shape )
+  Unable to fully structure code
+
+
+org.weasis.core.internal.StreamBackingStoreImpl
+----------------------------
+
+loadFromFile(org.apache.felix.prefs.BackingStoreManager org.apache.felix.prefs.PreferencesDescription )
+  Loose catch block
+readRemotePref(org.apache.felix.prefs.PreferencesImpl org.weasis.core.api.net.ClosableURLConnection )
+  Loose catch block

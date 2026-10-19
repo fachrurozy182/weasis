@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package org.weasis.core.ui.model.utils.exceptions;
+
+public class InvalidShapeException
+extends Exception {
+    public InvalidShapeException() {
+    }
+
+    public InvalidShapeException(String message) {
+        super(message);
+    }
+
+    public InvalidShapeException(Throwable cause) {
+        super(cause);
+    }
+
+    public InvalidShapeException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
+

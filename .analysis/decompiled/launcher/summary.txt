@@ -1,0 +1,9 @@
+Summary for /Users/fahrurozyahmad/Data/APPS/weasis/opt/weasis/lib/app/weasis-launcher.jar
+Decompiled with CFR 0.152
+
+
+org.weasis.pref.ConfigData
+----------------------------
+
+getConfigParamsFromServicePath()
+  Loose catch block

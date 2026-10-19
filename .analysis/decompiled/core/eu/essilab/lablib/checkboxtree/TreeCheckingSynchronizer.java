@@ -1,0 +1,40 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package eu.essilab.lablib.checkboxtree;
+
+import eu.essilab.lablib.checkboxtree.CheckboxTree;
+import eu.essilab.lablib.checkboxtree.TreeCheckingEvent;
+import eu.essilab.lablib.checkboxtree.TreeCheckingListener;
+import eu.essilab.lablib.checkboxtree.TreeCheckingModel;
+import javax.swing.tree.TreePath;
+
+public class TreeCheckingSynchronizer
+implements TreeCheckingListener {
+    protected TreeCheckingModel model1;
+    protected TreeCheckingModel model2;
+
+    public TreeCheckingSynchronizer(CheckboxTree tree1, CheckboxTree tree2) {
+        this.model1 = tree1.getCheckingModel();
+        this.model2 = tree2.getCheckingModel();
+        tree1.addTreeCheckingListener(this);
+        tree2.addTreeCheckingListener(this);
+    }
+
+    @Override
+    public void valueChanged(TreeCheckingEvent e) {
+        TreeCheckingModel dest;
+        Object source = e.getSource();
+        TreePath leadingPath = e.getPath();
+        boolean checked = e.isCheckedPath();
+        TreeCheckingModel treeCheckingModel = dest = source.equals(this.model1) ? this.model2 : this.model1;
+        if (checked) {
+            if (!dest.isPathChecked(leadingPath)) {
+                dest.addCheckingPath(leadingPath);
+            }
+        } else if (dest.isPathChecked(leadingPath)) {
+            dest.removeCheckingPath(leadingPath);
+        }
+    }
+}
+
